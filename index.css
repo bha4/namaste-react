@@ -1,3 +1,50 @@
-#heading{
-    color: blue;
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo {
+    width: 150px;
+}
+.nav-items > ul {
+    display: flex;
+    font-size: 20px;
+    list-style-type: none;
+}
+.nav-items > ul >li {
+    padding: 10px;
+    margin: 10px;
+}
+.res-card{
+    width :150px;
+    height :200px;
+    padding: 20px;
+    margin: 5px;
+    background-color: rgb(200, 248, 201);
+}
+.res-card:hover {
+    cursor: pointer;
+   border: 1px solid black;
+}
+.res-container {
+    display: flex;
+    flex-wrap:wrap ;
+}
+.res-name {
+        margin: 2px;        
+}
+.search {
+    padding: 10px;
+}
+.res-image{
+    width: 150px;
+}
+.res-cusines {
+    margin: 2px;
+}
+.res-ratings {
+    margin: 2px;
+}
+.res-ETA {
+    margin: 2px;
 }
