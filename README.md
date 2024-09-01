@@ -16,3 +16,5 @@
                 - Links
                 - Copyrights
         -->
+<!-- react hooks are normal js utility functions written by facebook devlopers  -->
+<!-- two very important hooks 1.useState 2.useEffect  -->

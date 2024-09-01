@@ -73,6 +73,8 @@
 
 .card:hover {
     transform: scale(1.05);
+    color: rgb(1, 163, 144);
+    background-color:  rgb(159, 175, 173);
 }
 
 .card img {
@@ -103,3 +105,9 @@
     margin-bottom: 5px;
 }
 
+.filter-btn {
+    margin: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: rgb(45, 71, 19);
+}
