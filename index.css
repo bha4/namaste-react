@@ -1,50 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    font-family: Arial, sans-serif;
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(1, 163, 144);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-.logo {
-    width: 150px;
-}
-.nav-items > ul {
+
+.logo-container {
     display: flex;
-    font-size: 20px;
-    list-style-type: none;
+    align-items: center;
 }
-.nav-items > ul >li {
-    padding: 10px;
-    margin: 10px;
+
+.logo {
+    width: 100px;
+    height: auto;
 }
-.res-card{
-    width :150px;
-    height :200px;
-    padding: 20px;
-    margin: 5px;
-    background-color: rgb(200, 248, 201);
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
-.res-card:hover {
+
+.nav-items ul li {
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-   border: 1px solid black;
+    color: white;
 }
+
+.body {
+    padding: 20px;
+}
+
+.search {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .res-container {
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
-.res-name {
-        margin: 2px;        
+
+.card {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
-.search {
-    padding: 10px;
+
+.card:hover {
+    transform: scale(1.05);
 }
-.res-image{
-    width: 150px;
+
+.card img {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px;
 }
-.res-cusines {
-    margin: 2px;
+
+.card h2 {
+    font-size: 22px;
+    margin: 10px 0;
 }
-.res-ratings {
-    margin: 2px;
+
+.card h4 {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 5px;
 }
-.res-ETA {
-    margin: 2px;
+.card h5 {
+    font-size: 12px;
+    color: rgb(116, 116, 116);
+    margin-bottom: 5px;
 }
+.card h6 {
+    font-size: 10px;
+    color: rgb(88, 88, 88);
+    margin-bottom: 5px;
+}
+
