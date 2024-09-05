@@ -111,3 +111,14 @@
     cursor: pointer;
     color: rgb(45, 71, 19);
 }
+.shimmer-card {
+    margin :50px;
+    width: 200px;
+    height: 350px;
+    background-color: rgb(212, 212, 212);
+}
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
