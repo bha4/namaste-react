@@ -59,5 +59,4 @@ const RestaurantMenu = () => {
     </div>
   );
 };
-
 export default RestaurantMenu;

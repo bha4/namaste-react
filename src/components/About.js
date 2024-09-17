@@ -1,9 +1,13 @@
 import React from 'react'
+import User from './User'
+import UserClass from './UseClass'
 
 const About = () => {
   return (
-    <div><h1>hello this is bharathi</h1></div>
-  )
+    <div>
+      <UserClass  />
+    </div>
+  );
 }
 
 export default About
