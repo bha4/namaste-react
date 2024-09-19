@@ -1,25 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer.js";
 import { Link } from "react-router-dom";
-import { RES_LIST } from "../utils/constant.js";
+import useListOfRes from "../utils/useListOfRes.js";
+import useOnlineStatus from "../utils/useOnlineStatus.js";
 const Body = () => {
-  const [listOfRestaraunt, setListOfRestaraunt] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [searchText, setSearchText] = useState("");
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  const [listOfRestaraunt,filteredRestaurants,setFilteredRestaurants]=useListOfRes();
 
-  const fetchData = async () => {
-    const data = await fetch(RES_LIST);
-    const json = await data.json();
-    const restaurants = json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
-    setListOfRestaraunt(restaurants);
-    setFilteredRestaurants(restaurants);
-  };
-
+  const onlineStatus = useOnlineStatus();
+  if(onlineStatus===false) return(<h1>Please check your internet connection!!</h1>)
   return listOfRestaraunt.length === 0 ? (
     <Shimmer />
   ) : (
