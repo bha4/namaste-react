@@ -17,12 +17,12 @@ const Body = () => {
     <div className="body">
       <div className="btn">
         <input
-          className="search"
+          className=" m-3 border shadow-lg"
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
         <button
-          className="search-btn"
+          className="px-3 bg-green-300 m-2 text-slate-800 rounded-xl hover:bg-green-500 hover:shadow-lg hover:text-emerald-950"
           onClick={() => {
             const filtered = listOfRestaraunt.filter((res) =>
               res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -33,7 +33,7 @@ const Body = () => {
           🔍Search
         </button>
         <button
-          className="filter-btn"
+          className="px-3 bg-green-300 m-2 text-slate-800 rounded-xl hover:bg-green-500 hover:shadow-lg hover:text-emerald-950"
           onClick={() => {
             const filtered = listOfRestaraunt.filter(
               (res) => res.info.avgRating >= 4.5
@@ -44,16 +44,16 @@ const Body = () => {
           Top Rated Restaurant
         </button>
       </div>
-      <div className="res-container">
+      <div className="flex-wrap flex ">
         {filteredRestaurants.map((restaurant) => {
-         return (
-           <Link
-             key={restaurant.info.id}
-             to={"/restaurants/" + restaurant.info.id}
-           >
-             <RestaurantCard {...restaurant.info} />
-           </Link>
-         );
+          return (
+            <Link
+              key={restaurant.info.id}
+              to={"/restaurants/" + restaurant.info.id}
+            >
+              <RestaurantCard {...restaurant.info} />
+            </Link>
+          );
         })}
       </div>
     </div>
