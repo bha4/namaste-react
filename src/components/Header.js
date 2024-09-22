@@ -8,7 +8,7 @@ const Header = () => {
   const [btnName, setBtnName] = useState("Login");
   const isOnline = useOnlineStatus();
   return (
-    <div className="flex justify-between bg-green-300 shadow-lg m-2">
+    <div className="flex justify-between bg-green-200 shadow-lg m-2">
       <div className="hover:shadow-lg ">
         <Link to="/">
           <img className="w-40" src={LOGO_URL} />
@@ -49,3 +49,4 @@ const Header = () => {
 };
 
 export default Header;
+ 

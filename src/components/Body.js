@@ -4,13 +4,17 @@ import Shimmer from "./Shimmer.js";
 import { Link } from "react-router-dom";
 import useListOfRes from "../utils/useListOfRes.js";
 import useOnlineStatus from "../utils/useOnlineStatus.js";
+
 const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   const [listOfRestaraunt,filteredRestaurants,setFilteredRestaurants]=useListOfRes();
-
+  console.log(listOfRestaraunt)
   const onlineStatus = useOnlineStatus();
+
   if(onlineStatus===false) return(<h1>Please check your internet connection!!</h1>)
+
+  
   return listOfRestaraunt.length === 0 ? (
     <Shimmer />
   ) : (
@@ -22,7 +26,7 @@ const Body = () => {
           onChange={(e) => setSearchText(e.target.value)}
         />
         <button
-          className="px-3 bg-green-300 m-2 text-slate-800 rounded-xl hover:bg-green-500 hover:shadow-lg hover:text-emerald-950"
+          className="px-3 bg-green-200 m-2 text-slate-800 rounded-xl hover:bg-green-500 hover:shadow-lg hover:text-emerald-950"
           onClick={() => {
             const filtered = listOfRestaraunt.filter((res) =>
               res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -33,7 +37,7 @@ const Body = () => {
           🔍Search
         </button>
         <button
-          className="px-3 bg-green-300 m-2 text-slate-800 rounded-xl hover:bg-green-500 hover:shadow-lg hover:text-emerald-950"
+          className="px-3 bg-green-200 m-2 text-slate-800 rounded-xl hover:bg-green-500 hover:shadow-lg hover:text-emerald-950"
           onClick={() => {
             const filtered = listOfRestaraunt.filter(
               (res) => res.info.avgRating >= 4.5
