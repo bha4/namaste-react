@@ -9,7 +9,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   const [listOfRestaraunt,filteredRestaurants,setFilteredRestaurants]=useListOfRes();
-  console.log(listOfRestaraunt)
+  
   const onlineStatus = useOnlineStatus();
 
   if(onlineStatus===false) return(<h1>Please check your internet connection!!</h1>)
