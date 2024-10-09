@@ -1,0 +1,72 @@
+{
+  "id": "393838",
+  "name": "Chinese Wok",
+  "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+  "locality": "Kasavanahalli",
+  "areaName": "Sarjapur Road",
+  "costForTwo": "₹250 for two",
+  "cuisines": ["Chinese", "Asian", "Tibetan", "Desserts"],
+  "avgRating": 4.2,
+  "parentId": "61955",
+  "avgRatingString": "4.2",
+  "totalRatingsString": "5.6K+",
+  "sla": {
+    "deliveryTime": 34,
+    "lastMileTravel": 4.3,
+    "serviceability": "SERVICEABLE",
+    "slaString": "30-35 mins",
+    "lastMileTravelString": "4.3 km",
+    "iconType": "ICON_TYPE_EMPTY"
+  },
+  "availability": {
+    "nextCloseTime": "2024-10-10 02:00:00",
+    "opened": true
+  },
+  "badges": {
+    "imageBadges": [
+      {
+        "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Noodles.png",
+        "description": "Delivery!"
+      }
+    ]
+  },
+  "isOpen": true,
+  "type": "F",
+  "badgesV2": {
+    "entityBadges": {
+      "imageBased": {
+        "badgeObject": [
+          {
+            "attributes": {
+              "description": "Delivery!",
+              "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Noodles.png"
+            }
+          }
+        ]
+      },
+      "textBased": {},
+      "textExtendedBadges": {}
+    }
+  },
+  "aggregatedDiscountInfoV3": {
+    "header": "50% OFF",
+    "subHeader": "UPTO ₹100"
+  },
+  "differentiatedUi": {
+    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    "differentiatedUiMediaDetails": {
+      "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+      "lottie": {},
+      "video": {}
+    }
+  },
+  "reviewsSummary": {},
+  "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+  "restaurantOfferPresentationInfo": {},
+  "externalRatings": {
+    "aggregatedRating": {
+      "rating": "--"
+    }
+  },
+  "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import { CDN_IMAGES_URL } from "../utils/constant";
 
-const RestaurantCard = ({
+const RestaurantCard = (props) => {
+  const {
   cloudinaryImageId,
   name,
   cuisines,
@@ -9,7 +10,9 @@ const RestaurantCard = ({
   sla,
   costForTwo,
   avgRating,
-}) => {
+} =props
+
+
   return (
     <div className=" h-[400px]  text-green-400 bg-green-200 rounded-lg shadow-lg overflow-hidden m-4 w-[300px] hover:shadow-xl hover:bg-green-500 hover:text-emerald-950 ">
       <img
