@@ -13,6 +13,7 @@ const addingToTheStore =(item)=>{
     <div className="text-lg">
       {list.map((item) => (
         <div
+          data-testid="foodItems"
           key={item.card.info.id}
           className="hover:bg-green-500 border-b-4 border-lime-100 flex items-start p-4"
         >

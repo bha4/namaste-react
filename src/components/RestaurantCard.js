@@ -14,7 +14,7 @@ const RestaurantCard = (props) => {
 
 
   return (
-    <div className=" h-[400px]  text-green-400 bg-green-200 rounded-lg shadow-lg overflow-hidden m-4 w-[300px] hover:shadow-xl hover:bg-green-500 hover:text-emerald-950 ">
+    <div data-testid="ResCard" className=" h-[400px]  text-green-400 bg-green-200 rounded-lg shadow-lg overflow-hidden m-4 w-[300px] hover:shadow-xl hover:bg-green-500 hover:text-emerald-950 ">
       <img
         className="w-full h-48 object-cover"
         src={`${CDN_IMAGES_URL}${cloudinaryImageId}`}

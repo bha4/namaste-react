@@ -23,6 +23,7 @@ const Body = () => {
         <input
           className=" m-3 border shadow-lg"
           value={searchText}
+          data-testid="searchInputBox"
           onChange={(e) => setSearchText(e.target.value)}
         />
         <button
